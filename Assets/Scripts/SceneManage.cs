@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextScene : MonoBehaviour {
+public class SceneManage : MonoBehaviour {
 
     public void NextLevel()
     {
@@ -13,5 +13,15 @@ public class NextScene : MonoBehaviour {
         }
 
         SceneManager.LoadScene(nextSceneIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LevelMenu()
+    {
+        SceneManager.LoadScene("LevelMenu");
     }
 }
